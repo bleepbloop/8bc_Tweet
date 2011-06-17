@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# Hacked together by Philip Cunningham
+# http://philipcunningham.org
 
 require 'rubygems'  
 require 'nokogiri'  
@@ -35,7 +37,7 @@ linkvalue = link[1]
 linkvalue1 = "https://8bc.org/#{linkvalue}"
 linkshort = ShortURL.shorten("#{linkvalue1}", :tinyurl)
 
-#Put it altogether in one string variable
+#Put it all together in one string variable
 update = "Last week's top track was '#{title3}' by#{author3}. #{linkshort}"
 
 #Prints output for debug
